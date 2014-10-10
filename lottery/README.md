@@ -22,51 +22,50 @@ pseudo code:
 * Put Fields into their own array. Ex: year array, month array, etc.
 * Calculate mean
 
-[java]
 //The following code demonstrates how to open the lottery.txt file
 //and read its contents back into the number array
 
-final int SIZE = 5;
-int numbers[] = new int[SIZE];
-int index = 0; //Loop control variable
+	final int SIZE = 5;
+	int numbers[] = new int[SIZE];
+	int index = 0; //Loop control variable
 
-//Open the file
-File file = new File("lottery.txt")
-Scanner inputFile = new Scanner(file);
+	//Open the file
+	File file = new File("lottery.txt")
+	Scanner inputFile = new Scanner(file);
 
-//Read the file contents into the array
-while( inputFile.hasNext() && index < number.length)
-{
-  numbers[index] = inputFile.nextInt();
-  index++;
-}
+	//Read the file contents into the array
+	while( inputFile.hasNext() && index < number.length)
+	{
+  		numbers[index] = inputFile.nextInt();
+  		index++;
+	}
 
-//Close the file
-inputFile.close();
-[/java]
+	//Close the file
+	inputFile.close();
 
-[java]
+
+	
 //The following code demonstrates how to download the cash5.dat file from 
 //the NJ state website
 
-import java.net.*;
-import java.io.*;
+	import java.net.*;
+	import java.io.*;
 
-public class test {
-    public static void main(String[] args) throws Exception {
+	public class test {
+   	 public static void main(String[] args) throws Exception {
 
-PrintWriter outputFile = new PrintWriter("cash5.dat");
+	PrintWriter outputFile = new PrintWriter("cash5.dat");
 
 
-        URL oracle = new URL("http://www.state.nj.us/lottery/data/cash5.dat");
-        BufferedReader in = new BufferedReader(
-        new InputStreamReader(oracle.openStream()));
+        	URL oracle = new URL("http://www.state.nj.us/lottery/data/cash5.dat");
+        	BufferedReader in = new BufferedReader(
+        	new InputStreamReader(oracle.openStream()));
 
-        String inputLine;
-        while ((inputLine = in.readLine()) != null)
-            outputFile.println(inputLine);
-        in.close();
-outputFile.close();
-    }
+        	String inputLine;
+        	while ((inputLine = in.readLine()) != null)
+            		outputFile.println(inputLine);
+        	
+		in.close();
+		outputFile.close();
+    	}
 }
-[/java]
