@@ -22,7 +22,7 @@ pseudo code:
 * Put Fields into their own array. Ex: year array, month array, etc.
 * Calculate mean
 
-	//The following code demonstrates how to open the lottery.txt file and read its contents back into the number array
+	#The following code demonstrates how to open the lottery.txt file and read its contents back into the number array
 	final int SIZE = 5;
 	int numbers[] = new int[SIZE];
 	int index = 0; //Loop control variable
@@ -43,7 +43,7 @@ pseudo code:
 
 
 	
-	//The following code demonstrates how to download the cash5.dat file from the NJ state website
+	#The following code demonstrates how to download the cash5.dat file from the NJ state website
 	import java.net.*;
 	import java.io.*;
 
