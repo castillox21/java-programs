@@ -1,4 +1,4 @@
-// Lottey Program
+// Lottery Program
 
 import java.io.*;
 import java.net.*;
